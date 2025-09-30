@@ -1,112 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+    --black: #000;
+    --white: #fff;
+    --main-color: #B1FF85;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     height: 200vh;
-    background: white;
+    background: var(--white);
     font-family: "DM Sans", sans-serif;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--black);
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .logo span {
-    color: #B1FF85;
+    color: var(--main-color);
 }
 
-.container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: white;
-}
-
-.hero {
-    position: absolute;
-    top: 25%;
-    left: 3%;
-    font-weight: 500;
-    font-size: 54px;
-    z-index: 1;
-    color: white;
-}
-
-.explore-section {
-    height: 50%;
-    width: 40%;
-    display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 20px 30px 0 50px;
-    box-sizing: border-box;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    z-index: 1;
-}
-
-.explore-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 175px;
-    height: 45px;
-    background-color: #B1FF85;
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-
-#img1,
-#img2 {
-    position: absolute;
-    object-fit: cover;
-    transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-        height 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-
-#img1 {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#img2 {
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 0%;
-}
 
 .header__container {
     width: 100%;
     height: 62px;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px 0 40px;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: var(--white);
     z-index: 10;
     position: sticky;
-    top: 0;
 }
 
 
@@ -125,7 +62,7 @@ body {
 }
 
 .header__nav {
-    background-color: white;
+    background-color: var(--white);
     height: 50px;
     width: 60%;
 }
@@ -170,12 +107,12 @@ body {
 }
 
 .get-started-button {
+    height: 40px;
+    width: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #B1FF85;
-    height: 40px;
-    width: 50%;
+    background-color: var(--main-color);
     margin-top: 4px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -210,4 +147,118 @@ body {
     width: 100%;
     background-color: var(--black);
     border-radius: 2px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    font-weight: 500;
+    font-size: 54px;
+    z-index: 1;
+    color: var(--white);
+}
+
+.explore-section {
+    height: 50%;
+    width: 40%;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 20px 30px 0 50px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    z-index: 1;
+}
+
+.explore-button {
+    width: 175px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+#img1,
+#img2 {
+    position: absolute;
+    object-fit: cover;
+    transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#img1 {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#img2 {
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+}
+
+.content {
+    height: 800px;
+    width: 100%;
+    background-color: #B1FF85;
+}
+
+
+
+@media (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .header__menu-toggle {
+        display: flex;
+    }
+
+    .header__container {
+        padding: 0 20px;
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .header__cta {
+        display: none;
+    }
 }

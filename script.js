@@ -29,4 +29,12 @@ window.addEventListener('scroll', () => {
         exploresection.style.right = 'auto';
         exploresection.style.left = '0';
     }
+
+    if(scrollVal>= 365.7){
+        hero.styleL
+    }
+    
+
 });
+
+
