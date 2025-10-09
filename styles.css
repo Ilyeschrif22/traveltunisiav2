@@ -597,17 +597,18 @@
     @media (max-width: 740px) {
 
         .logo {
-            width: 225px;
+            font-size: 22px;
+            width: 240px;
         }
 
         .hero {
-            padding: 5em 2em 1em 2em;
+            padding: 2em 2em 0 2em;
         }
 
         .hero-title {
             font-size: 42px;
             font-weight: 600;
-            margin-bottom: 1em;
+            margin-bottom: 0;
         }
 
         .explore-section {
@@ -615,7 +616,7 @@
         }
 
         .explore-button {
-            margin-top: 40px;
+            margin-top: 10px;
         }
 
         .card-container {
