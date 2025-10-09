@@ -625,18 +625,18 @@
 
         .experiences {
             height: 100%;
-            padding: 0 40px;
+            padding: 0 28px;
         }
 
         .experience-title {
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 500;
             line-height: 1.3;
             width: 240px;
         }
 
         .experience-number {
-            font-size: 28px;
+            font-size: 20px;
         }
 
         .experience-image {
@@ -644,8 +644,12 @@
         }
 
         .arrow_outward img {
-            height: 30px;
-            width: 30px;
+            height: 20px;
+            width: 20px;
+        }
+
+        .experience-link-block {
+            gap: 0;
         }
 
         .experience-link-block:hover {
