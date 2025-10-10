@@ -495,6 +495,102 @@
         color: #333;
     }
 
+    .contact-wrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    .map-container {
+        height: 100%;
+        width: 50%;
+    }
+
+    .form-container {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 650px;
+        height: 680px;
+        background-color: #16422d;
+        padding: 32px 32px 0 32px;
+    }
+
+    .form-title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--white)
+    }
+
+    .name-phone-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .contact-name,
+    .contact-phone {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        width: 300px;
+        height: 60px;
+        background-color: var(--white);
+
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        height: 80%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: var(--gray);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .contact-email,
+    .contact-subject {
+        width: 100%;
+        height: 60px;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+
+    .contact-message {
+        width: 100%;
+        height: 180px;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+
+    .send-message {
+        margin-top: 20px;
+        height: 50px;
+        width: 180px;
+        background-color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
     footer {
         background: var(--text-dark);
         color: var(--text-light);
@@ -675,4 +771,36 @@
             line-height: 1.7;
             padding: 0 10px;
         }
+
+        .contact {
+            padding: 0;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .contact-form {
+            padding: 20px;
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        .form-title {
+            font-size: 30px;
+        }
+
+        input {}
+
+        .contact-name,
+        .contact-phone,
+        .contact-email,
+        .contact-subject {
+            font-size: 14px;
+            padding: 10px 10px;
+        }
+
+
+
     }
